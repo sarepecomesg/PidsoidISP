@@ -25,8 +25,6 @@ jobs:
       env:
         EXPORT_PDF: True
         CI: true
-    - name: Azure Login
-      uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}    
     - name: Upload to Azure
